@@ -12,7 +12,7 @@ private:
 
 public:
     // Constructor using initializer list
-    Employee(const char* n = "NoName", int i = 0, float s = 0.0f) : id(i), salary(s) {
+    Employee(const char* n = "NoName", int i = 0, float s = 0.0) : id(i), salary(s) {
         name = nullptr;
         name = new char[strlen(n) + 1];
         strcpy_s(name, strlen(n) + 1, n);
@@ -64,3 +64,4 @@ public:
         return temp;
     }
 };
+
